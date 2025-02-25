@@ -7,13 +7,10 @@ interface IProps {
 }
 
 export const MainLayout: FC<IProps> = ({ children }) => {
-
   return (
     <S.MainLayoutContainer>
       <Header />
-      <S.MainContent>
-        {children}
-      </S.MainContent>
+      <S.MainContent>{children}</S.MainContent>
     </S.MainLayoutContainer>
   );
 };
